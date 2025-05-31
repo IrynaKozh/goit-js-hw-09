@@ -69,7 +69,6 @@ const images = [
     ];
 const container = document.querySelector(".gallery");
 container.insertAdjacentHTML("beforeend", createMarcup(images));
-// container.addEventListener("click", handleClick);
 function createMarcup(arr) {
     return arr.map(({ preview, original, description }) => 
         `<li class="gallery-item">
@@ -90,15 +89,4 @@ const lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionDelay: 250,
  });
-// function handleClick(event) {
-//   event.preventDefault();
-//   if (event.target.nodeName !== "IMG") return;
-//   const largeImageURL = event.target.dataset.source;
-//   const product = images.find((item) => item.original === largeImageURL);
-//     const instance = basicLightbox.create(`
-//        <div class="modal">
-//        <img src="${product.original}" alt="${product.description}" />
-//        </div>
-//     `)
-//     instance.show();
-// }
+
