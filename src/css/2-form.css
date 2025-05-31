@@ -1,0 +1,11 @@
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 408px;
+    margin: 0 auto;
+    padding: 24px;
+    background-color: #ffffff
+    ;
+}
